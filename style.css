@@ -1,0 +1,30 @@
+body{
+    background-color: #282a36;
+    color: #f8f8f2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+#autoText{
+    border-right: #ff79c6 solid 0.15em;
+    letter-spacing: 0.05em;
+    animation: blink 0.75s step-end infinite;
+}
+
+/* creons l'animation qui va faire clignoter */
+
+@keyframes blink{
+
+    from,
+    to{
+        border-color: transparent;
+    }
+    50%{
+        border-color:#ff79c6;
+    }
+}
